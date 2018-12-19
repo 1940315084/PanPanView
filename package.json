@@ -1,19 +1,7 @@
 {
-  "name": "panpanview",
-  "version": "1.0.0",
-  "description": "this is a project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/1940315084/PanPanView.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/1940315084/PanPanView/issues"
-  },
-  "homepage": "https://github.com/1940315084/PanPanView#readme"
+  "name": "PanPanView",
+  "version": "0.0.1",
+  "dependencies": {
+    
+  }
 }
