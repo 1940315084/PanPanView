@@ -12,3 +12,23 @@ app.use(express.static(__dirname+"/public"));
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended:false}));
 const url = require("url");
+//导入cookie-parser模块
+const cookieParser = require("cookie-parser");
+//express注入cookie-parser
+app.use(cookieParser("1525822sad"));//盐
+
+app.get("/*", function(req, res) {
+	var pathname = url.parse(req.url).pathname;
+	if(pathname == "/") {
+		// employeecontrol.tomain(req, res);
+	}
+	
+});
+
+//post方式打开
+app.post("/*", function(req, res) {
+	var pathname = url.parse(req.url).pathname;
+	if(pathname == "/employeelogin") {
+		employeecontrol.employeelogin(req, res);
+	}
+});
