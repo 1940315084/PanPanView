@@ -954,6 +954,21 @@ button.note-color-btn {
 	font-weight:300;
 	margin-bottom: 1em;
 }
+.widget_head{
+	width:100%;
+	position: relative;
+}
+.but_add{
+	height: 30px;
+	width: 100px;
+	background-color:#6EB3A6 ;
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	line-height: 30px;
+	position: absolute;
+	right:50px;
+}
 .grid_3 p{
   color: #999;
   font-size: 0.85em;
