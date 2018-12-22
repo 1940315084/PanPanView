@@ -4,8 +4,6 @@
 <title>Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!-- Bootstrap Core CSS -->
 <link href="../public/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
@@ -18,35 +16,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='http://fonts.useso.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 <!---//webfonts--->  
 <!-- Bootstrap Core JavaScript -->
+<link rel="stylesheet" href="../public/css/login.css">
+<script type="text/javascript" src="../public/js/login.js">
+	
+</script>
 <script src="../public/js/bootstrap.min.js"></script>
 </head>
 <body id="login">
   <div class="login-logo">
-    <a href="index.html"><img src="../public/images/logo.png" alt=""/></a>
+    <a href="index.html"><img src="https://www.best-seeing.com/images/logo.png" alt=""/></a>
   </div>
-  <h2 class="form-heading">login</h2>
+  <h2 class="form-heading"></h2>
   <div class="app-cam">
 	  <form>
-		<input type="text" class="text" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}">
-		<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
-		<div class="submit"><input type="submit" onclick="myFunction()" value="Login"></div>
-		<div class="login-social-link">
-          <a href="index.html" class="facebook">
-              Facebook
-          </a>
-          <a href="index.html" class="twitter">
-              Twitter
-          </a>
-        </div>
+		<input type="text" class="text" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}">
+		<input type="password" class="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+		<div class="submit"><input type="submit" onclick="isLogin()" value="Login"></div>
+		<div class="tips">输入用户名或密码错误，请重新输入</div>
 		<ul class="new">
-			<li class="new_left"><p><a href="#">Forgot Password ?</a></p></li>
-			<li class="new_right"><p class="sign">New here ?<a href="register.html"> Sign Up</a></p></li>
+			<li class="new_left"><p><a href="#">忘记密码 ?</a></p></li>
+			<li class="new_right"><p class="sign"><a href="register.html"> 注册</a></p></li>
 			<div class="clearfix"></div>
 		</ul>
 	</form>
   </div>
    <div class="copy_layout login">
-      <p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+      <p>Copyright &copy;  2017浙江贯通科技有限公司版权所有 &nbsp; 浙B2-20090104-5</p>
+			<p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802009257" style="color: #939393; text-decoration: none;"><img src="https://www.best-seeing.com/images/beian.png" alt="">浙公网安备 33010802009257号</a></p>
    </div>
 </body>
 </html>
