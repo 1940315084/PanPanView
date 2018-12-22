@@ -16,6 +16,10 @@
 <link href='http://fonts.useso.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 <!---//webfonts--->  
 <!-- Bootstrap Core JavaScript -->
+<link rel="stylesheet" href="../public/css/login.css">
+<script type="text/javascript" src="../public/js/login.js">
+	
+</script>
 <script src="../public/js/bootstrap.min.js"></script>
 </head>
 <body id="login">
@@ -26,8 +30,9 @@
   <div class="app-cam">
 	  <form>
 		<input type="text" class="text" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}">
-		<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
-		<div class="submit"><input type="submit" onclick="myFunction()" value="Login"></div>
+		<input type="password" class="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+		<div class="submit"><input type="submit" onclick="isLogin()" value="Login"></div>
+		<div class="tips">输入用户名或密码错误，请重新输入</div>
 		<ul class="new">
 			<li class="new_left"><p><a href="#">忘记密码 ?</a></p></li>
 			<li class="new_right"><p class="sign"><a href="register.html"> 注册</a></p></li>

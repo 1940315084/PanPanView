@@ -28,7 +28,7 @@ app.get("/*", function(req, res) {
 //post方式打开
 app.post("/*", function(req, res) {
 	var pathname = url.parse(req.url).pathname;
-	if(pathname == "/employeelogin") {
+	if(pathname == "/employeeLogin") {
 		employeecontrol.employeelogin(req, res);
 	}
 });
