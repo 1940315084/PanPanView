@@ -32,3 +32,7 @@ app.post("/*", function(req, res) {
 		employeecontrol.employeelogin(req, res);
 	}
 });
+
+app.listen(9999, function() {
+    console.log("服务器正在监听中");
+});
