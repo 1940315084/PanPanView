@@ -1,0 +1,53 @@
+select {
+	width: 100%;
+	height: 40px;
+	background-color: #222224;
+	color: #999;
+	font-size: 0.85em;
+	margin: 0 0 1em 0;
+	padding-left: 10px;
+}
+#starttime {
+	background-color: #222224;
+	color: #999;
+	font-size: 0.85em;
+	margin: 0 0 1em 0;
+	padding-left: 10px;
+}
+.departmentspan {
+	color: red;
+	font-size: 12px;
+}
+.positionspan {
+	color: red;
+	font-size: 12px;
+}
+.repasswordspan {
+	position: relative;
+	top: -18px;
+	color: red;
+	font-size: 12px;
+}
+.usernamespan {
+	color: red;
+	font-size: 12px;
+}
+.passwordspan {
+	color: red;
+	font-size: 12px;
+}
+.showmsg {
+	width: 200px;
+	height: 100px;
+	background-color: rgb(6, 217, 149);
+	line-height: 100px;
+	font-size: 14px;
+	position: absolute;
+	color: #fff;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+}

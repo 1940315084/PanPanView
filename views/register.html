@@ -8,23 +8,24 @@
 			addEventListener("load", function() {
 				setTimeout(hideURLbar, 0);
 			}, false);
-
 			function hideURLbar() {
 				window.scrollTo(0, 1);
 			}
 		</script>
 		<!-- Bootstrap Core CSS -->
-		<link href="../public/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+		<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 		<!-- Custom CSS -->
-		<link href="../public/css/style.css" rel='stylesheet' type='text/css' />
-		<link href="../public/css/font-awesome.css" rel="stylesheet">
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<link href="css/font-awesome.css" rel="stylesheet">
 		<!-- jQuery -->
-		<script src="../public/js/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
 		<!----webfonts--->
 		<!-- <link href='http://fonts.useso.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'> -->
 		<!---//webfonts--->
 		<!-- Bootstrap Core JavaScript -->
-		<script src="../public/js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/register.css">
+	
 	</head>
 	<body id="login">
 		<div class="login-logo">
@@ -33,32 +34,48 @@
 		<h2 class="form-heading" style="color: #333;font-weight: 300;">注册</h2>
 		<form class="form-signin app-cam" action="index.html">
 			<p style="color: #333; font-weight: 300;">请输入您的基本信息</p>
-			<input type="text" class="form-control1" placeholder="姓名" autofocus="">
-			<input type="text" class="form-control1" placeholder="地址" autofocus="">
-			<input type="text" class="form-control1" placeholder="邮箱" autofocus="">
-			<input type="text" class="form-control1" placeholder="城市" autofocus="">
-			<div class="radios">
-				<label for="radio-01" class="label_radio">
-					<input type="radio" checked=""> 男
-				</label>
-				<label for="radio-02" class="label_radio">
-					<input type="radio"> 女
-				</label>
-			</div>
+			<input type="text" class="form-control1 name" value="姓名" autofocus="">
+			<input type="text" class="form-control1 age" value="年龄" autofocus="">
+			<select id="sex">
+				<option value ="" disabled selected="selected">性别</option>
+				<option value ="">男</option>
+				<option value ="">女</option>
+			</select>
+			<select id="department">
+				<option value="" disabled selected="selected">部门</option>
+				<option value="">人事部</option>
+				<option value="">公关部</option>
+				<option value="">研发部</option>
+				<option value="">后勤部</option>
+			</select>
+			<span class="departmentspan">部门不能为空</span>
+			<select id="position" >
+				<option value="" disabled="disabled" selected>职位</option>
+				<option value="">经理</option>
+				<option value="">组长</option>
+				<option value="">职员</option>
+				<option value="">秘书</option>
+			</select>
+			<span class="positionspan">职位不能为空</span>
+			<input type="date" class="form-control1" placeholder="入职时间" autofocus="" id="starttime">
 			<p style="color: #333;font-weight: 300;"> 请输入您的账户信息</p>
-			<input type="text" class="form-control1" placeholder="用户名" autofocus="">
-			<input type="password" class="form-control1" placeholder="密码">
-			<input type="password" class="form-control1" placeholder="请再次输入密码">
+			<input type="text" class="form-control1 username" value="电话号码" autofocus="">
+			<span class="usernamespan">请输入正确的电话号码</span>
+			<input type="password" class="form-control1 password" value="密码">
+			<span class="passwordspan">请输入6位到16位之内的字符</span>
+			<input type="password" class="form-control1 repassword" value="请再次输入密码">
+			<span class="repasswordspan">两次输入的密码必须相同</span>
 			<label class="checkbox-custom check-success">
 				<input type="checkbox" value="agree this condition" id="checkbox1"> <label for="checkbox1">我同意服务信息协议</label>
 			</label>
-			<button class="btn btn-lg btn-success1 btn-block" type="submit">提交</button>
+			<button class="btn btn-lg btn-success1 btn-block" type="submit" onclick="regem.register()">提交</button>
 			<div class="registration">
 				已经注册.
-				<a class="" href="login.html">
+				<a class="" href="/">
 					登录
 				</a>
 			</div>
+			<div class="showmsg">注册成功</div>
 		</form>
 		<div class="copy_layout login register">
 			<p>Copyright &copy; 2017浙江贯通科技有限公司版权所有 &nbsp; 浙B2-20090104-5</p>
@@ -66,4 +83,6 @@
 					 src="https://www.best-seeing.com/images/beian.png" alt="">浙公网安备 33010802009257号</a></p>
 		</div>
 	</body>
+	<script type="text/javascript" src="js/register.js">	
+	</script>
 </html>

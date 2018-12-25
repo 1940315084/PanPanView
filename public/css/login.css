@@ -1,5 +1,25 @@
 .tips {
 	font-size: 12px;
 	color: red;
-	display: none;
+}
+input:-webkit-autofill,
+
+input:-webkit-autofill:hover,
+
+input:-webkit-autofill:focus,
+
+input:-webkit-autofill:active{
+
+    -webkit-transition-delay: 9999s;
+
+    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+
+}
+.submit {
+	width: 100%;
+	border: none;
+	background-color: #19AF91;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
 }

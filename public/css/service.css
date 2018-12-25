@@ -1,0 +1,46 @@
+#showservicedata {
+	/* margin-left: 250px; */
+	/* background-color: red; */
+	height: 284px;
+	padding-left: 12px;
+}
+#showdatacontainer {
+	margin-left: 250px;
+	/* background-color: red; */
+	height: 351px;
+	padding-left: 12px;
+}
+.ulchangepage {
+	margin: 31px 0;
+}
+.changeServiceMsg {
+	position: absolute;
+	width: 500px;
+	height: 232px;
+	background-color: rgb(6, 217, 149);
+	padding: 20px;
+	top: -22px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	
+	
+}
+.spanmsg {
+	position: relative;
+	top: -53px;
+}
+#updateName {
+	margin-left: 32px;
+}
+.servicecontent {
+	margin: 12px 0;
+}
+.button {
+	-webkit-border-radius: 5px;
+	margin: 0 55px;
+}
