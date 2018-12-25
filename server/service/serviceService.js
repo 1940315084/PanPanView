@@ -7,13 +7,14 @@ function getServiceData(pagenow, cb) {
 		cb(serviceArray);
 	});
 }
+//ss
 //根据每页显示的最大条数显示总页数
 function showTotalPage(cb) {
 	serviceDba.showTotalPage(function(totalCountResult) {
 		var totalpage = Math.ceil(totalCountResult[0].totalCount / publicdata.max);
 		cb(totalpage);
 	});
-}
+}//s
 //根据id删除服务信息
 function deleteById(id, cb) {
 	serviceDba.deleteById(id, function(affectedRows) {

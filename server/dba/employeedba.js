@@ -9,6 +9,7 @@ function selectByNoAndPwd(username, password, cb) {
 		});
 	});
 }
+//
 function employeeRegister(name, age, sex, position, department, username, starttime, password, cb) {
 	dbutil.pool.getConnection(function(err, connection) {
 		if(err) throw err;

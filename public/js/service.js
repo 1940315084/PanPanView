@@ -15,6 +15,7 @@ ser.showService = function() {
 	ser.showTotalPage();
 	ser.showServiceData(ser.pagenow);
 }
+//
 //获得服务信息
 ser.showServiceData = function(pagenow) {
 	$.ajax({

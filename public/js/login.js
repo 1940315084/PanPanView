@@ -10,3 +10,4 @@ var em = new employee();
 em.init = function() {
 	// $(".tips").hide();
 }
+//

@@ -8,6 +8,6 @@ function employeeRegister(name, age, sex, position, department, username, startt
 	employeedba.employeeRegister(name, age, sex, position, department, username, starttime, password, function(result) {
 		cb(result);
 	});
-}
+}//ss
 exports.employeeRegister = employeeRegister;
 exports.employeeLogin = employeeLogin;

@@ -20,7 +20,7 @@ regem.init = function() {
 	$(".passwordspan").css("opacity","0");
 	$(".showmsg").hide();
 
-}
+}//
 regem.register = function() {
 	this.name = $(".name")[0].value;
 	this.age = $(".age")[0].value;

@@ -20,8 +20,8 @@ app.use(cookieParser("1525822sad"));//盐
 app.get("/*", function(req, res) {
 	var pathname = url.parse(req.url).pathname;
 	if(pathname == "/") {
-		// employeecontrol.tomain(req, res);
-	}
+		employeecontrol.tomain(req, res);
+	}  
 	
 });
 

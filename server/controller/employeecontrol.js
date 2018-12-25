@@ -11,3 +11,4 @@ function tomain(req, res) {
 		res.render("login", {inf:"请先登录"});
 	}
 }
+//

@@ -12,6 +12,7 @@ function showTotalPage(req, res) {
 		res.json(totalpage);
 	})
 }
+//
 //根据id删除服务信息
 function deleteById(req, res) {
 	var id = req.query.id;

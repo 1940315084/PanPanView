@@ -9,6 +9,7 @@ function getServiceData(first, max, cb) {
 		});
 	});
 }
+//
 //获得总条数
 function showTotalPage(cb) {
 	dbutil.pool.getConnection(function(err, connection) {
