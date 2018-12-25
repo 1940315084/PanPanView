@@ -17,12 +17,24 @@ const cookieParser = require("cookie-parser");
 //express注入cookie-parser
 app.use(cookieParser("1525822sad"));//盐
 
+
+var productscon = require('./server/controller/productscon.js');
+var introductioncon = require('./server/controller/introductioncon.js')
+
 app.get("/*", function(req, res) {
 	var pathname = url.parse(req.url).pathname;
 	if(pathname == "/") {
-		// employeecontrol.tomain(req, res);
+		res.render('products')
+	}else if (pathname =='/ask'){
+		productscon.show(req, res)
+	}else if (pathname == '/aboutus'){
+		introductioncon.showus(req,res)
+	}else if (pathname == "/connectus"){
+		introductioncon.showconnect(req,res)
+	}else if (pathname =="/addproduct"){
+		productscon.addproduct(req,res)
 	}
-	
+		
 });
 
 //post方式打开
@@ -32,7 +44,7 @@ app.post("/*", function(req, res) {
 		employeecontrol.employeelogin(req, res);
 	}
 });
-
 app.listen(9999, function() {
-    console.log("服务器正在监听中");
+	console.log("服务器正在监听中");
 });
+
