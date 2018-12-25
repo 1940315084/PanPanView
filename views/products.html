@@ -45,7 +45,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</button>
 					<a class="navbar-brand" href="index.html">产品</a>
 					<button onclick="askpro()">请求</button>
-					
+					<button onclick="addshow()" style="z-index: 999;">添加</button>
 				</div>
 				<!-- /.navbar-header -->
 				<ul class="nav navbar-nav navbar-right">
@@ -82,12 +82,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="media">
 							<div class="media-body">
 								<h4 class="media-heading">医院产品</h4>
-								<button class="but_add" onclick="addproduct()" style="z-index: 999;">添加</button>
-								<div id= "add">
+								
+								<div id= "add" style="display: none;">
 									产品名字: <input type="text" style="margin: 0 0 5px 5px;" id="name"/><br>
 									描述信息: <input type="text" style="margin: 0 0 5px 5px;" id="message"/><br>
 									产品种类: <input type="text" style="margin: 0 0 5px 5px;" id="variety"/><br>
-									图片路径: <input type="text" style="margin: 0 0 5px 5px;" id="image_url"/>
+									图片路径: <input type="text" style="margin: 0 0 5px 5px;" id="image_url"/><br>
+									<button type="button" onclick="addproduct()">确认添加</button>
 								</div>
 								<p>以专科病历为中心 满足亚专科特定需求的产品方案</p>
 								<div class="media" id="hospital1"></div>
