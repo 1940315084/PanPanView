@@ -3,8 +3,8 @@ var mysql = require("mysql");
 const pool = mysql.createPool({
     host: 'localhost',
     user: 'root',
-    password: 'hejie197412',
-    database: 'panpan',
+    password: '1234',
+    database: 'graduate',
     port: 3306
 })
 exports.pool = pool;

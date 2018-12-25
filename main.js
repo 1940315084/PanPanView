@@ -16,23 +16,13 @@ const url = require("url");
 const cookieParser = require("cookie-parser");
 //express注入cookie-parser
 app.use(cookieParser("1525822sad"));//盐
-const employeecontrol = require("./server/controller/employeecontrol.js");
-const serviceControl = require("./server/controller/serviceControl.js");
-app.get("/*", function(req, res) { 
+
+app.get("/*", function(req, res) {
 	var pathname = url.parse(req.url).pathname;
 	if(pathname == "/") {
-		employeecontrol.tomain(req, res);
-	} else if(pathname == "/toregister") {
-		res.render("register");
-	} else if(pathname == "/getServiceData") {
-		serviceControl.getServiceData(req, res);
-	} else if(pathname == "/showTotalPage") {
-		serviceControl.showTotalPage(req, res);
-	} else if(pathname == "/deleteById") {
-		serviceControl.deleteById(req, res);
-	} else if(pathname == "/toIntrodution") {
-		res.render("introduction");
+		// employeecontrol.tomain(req, res);
 	}
+	
 });
 
 //post方式打开
@@ -40,10 +30,6 @@ app.post("/*", function(req, res) {
 	var pathname = url.parse(req.url).pathname;
 	if(pathname == "/employeeLogin") {
 		employeecontrol.employeelogin(req, res);
-	} else if(pathname == "/employeeRegister"){
-		employeecontrol.employeeRegister(req, res);
-	} else if(pathname == "/changeService") {
-		serviceControl.changeService(req, res);
 	}
 });
 
