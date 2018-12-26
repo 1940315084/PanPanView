@@ -5,7 +5,7 @@ function select(cb){
 		if(err){
 			throw err;
 		}else{
-			const sql = 'select name,message,image_url,variety from products '
+			const sql = 'select name,message,image_url,variety from products';
 			connection.query(sql,function(qerr,result){
 				connection.release();//释放连接到连接池，连接并没有并闭
 				// console.log("1"+result)

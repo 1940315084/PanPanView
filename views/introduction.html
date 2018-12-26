@@ -23,7 +23,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- jQuery -->
 		<script src="js/jquery.min.js"></script>
 		<!----webfonts--->
-		<link href='http://fonts.useso.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+		<!-- <link href='http://fonts.useso.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'> -->
 		<!---//webfonts--->
 		<!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
@@ -32,14 +32,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div id="wrapper">
 			<!-- Navigation -->
 			<nav class="top1 navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;background-color:#6EB3A6;">
-							<div class="navbar-header">
-								<a class="navbar-brand" href="index.html">关于</a>
-							</div>
-						</nav>
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">关于</a>
+				</div>
+				<div>
+					<!-- /.navbar-header -->
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown" style="font-size: 12px;">
+							<%if(typeof name != "undefined") {%>
+							欢迎
+							<a href="tohome" style="display: inline-block;"><%-name%></a>, <a href="loginout" class="dropdown-toggle" id="loginout" style="display: inline-block;">退出</a>
+							<%}%>
+						</li>
+					</ul>
+				</div>
+			</nav>
 			<div id="page-wrapper">
 				<div class="graphs">
 					<div class="widget_head">关于我们
-						<button class="but_add"  onclick="askintroction()">介绍</button>
+						<button class="but_add" onclick="askintroction()">介绍</button>
 					</div>
 					<div class="bs-example5" data-example-id="default-media">
 						<div id="us">
@@ -62,6 +73,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- Metis Menu Plugin JavaScript -->
 		<script src="js/metisMenu.min.js"></script>
 		<script src="js/custom.js"></script>
-		<script src="js/introductionshow.js" ></script>
+		<script src="js/introductionshow.js"></script>
 	</body>
 </html>

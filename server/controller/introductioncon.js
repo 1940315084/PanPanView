@@ -9,6 +9,10 @@ function showconnect(req,res){
 		res.json(result)
 	})
 }
-
+function loginout(req, res) {
+	res.clearCookie('employee');
+	res.render("login", {inf:"请先登录"});
+}
+ exports.loginout = loginout;
 exports.showus = showus;
 exports.showconnect = showconnect;

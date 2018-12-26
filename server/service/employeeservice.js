@@ -5,6 +5,8 @@ function employeeLogin(username,password,cb) {
 	});
 }
 function employeeRegister(name, age, sex, position, department, username, starttime, password, cb) {
+	console.log(name, age, sex, position, department, username, starttime, password);
+
 	employeedba.employeeRegister(name, age, sex, position, department, username, starttime, password, function(result) {
 		cb(result);
 	});

@@ -161,37 +161,3 @@ ser.changeService = function() {
 		}
 	});
 }
-// ser.showAboutUs = function() {
-// 	$.ajax({
-// 		url:"/toIntroduction",
-// 		type:"get",
-// 		dataType:"json",
-// // 		data: {//请求参数
-// // 			id: $("#updateid").val(),
-// // 			servicename: $("#updateName").val(),
-// // 			servicecontent: $("#updateRemark").val()
-// // 		},
-// 		success:function(result) {
-// 			console.log("请求成功");
-// // 			if(result == "ok") {
-// // 				//修改成功
-// // 				ser.pagenow = 1;
-// // 				//重新更新页面
-// // 				console.log("修改成功");
-// // 				ser.showServiceData(ser.pagenow);
-// // 				ser.showTotalPage();
-// // 				$(".change").html("修改成功");
-// // 				setTimeout(function() {
-// // 					$(".changeServiceMsg").hide();
-// // 				},2000);
-// // 				
-// // 			}
-// // 			else {//修改失败
-// // 				$(".change").html("修改失败");
-// // 			}
-// 		},
-// 		error:function(error){
-// 			console.log("ajax访问出错");
-// 		}
-// 	});
-// }

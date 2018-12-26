@@ -1,6 +1,6 @@
 var data1 = '';
 var data2 = '';
-
+//向数据库请求产品展示出来
 function askpro() {
 	console.log("aaaaaa")
 	$.ajax({
@@ -8,7 +8,6 @@ function askpro() {
 		type: "get",
 		dataType: "json",
 		success: function(result) {
-
 			console.log(result.length);
 			for (var i = 0; i < result.length; i++) {
 				var url = result[i].image_url;
@@ -26,29 +25,27 @@ function askpro() {
 					data2 += "<div class='media-body'><h4 class='media-heading' >" + name + "</h4><p>" + message +
 						"</p></div></div>"
 				}
-
 			}
 			$("#hospital1").html(data1);
 			$("#hospital2").html(data2);
-
-
 		},
 		error: function(error) {
 			console.log("ajax访问出错")
 		}
 	});
 }
-var name,message,variety,image_url
+var name,message,variety,image_url;
+//展示添加产品的输入框
 function addshow(){
 	$("#add").css("display", "block")
-	
-	
 }
+//添加产品
 function addproduct() {
-	name = $("#name").val()
+	name = $("#name").val();
 	message = $("#message").val()
 	variety = $("#variety").val()
-	image_url = $("#image_url").val()
+	image_url = $("#image_url").val();
+	console.log(name,message,variety,image_url);
 		if (name == "" || message == "" || variety == "" || image_url == "") {
 			alert("请输入完整的产品信息")
 		} else {

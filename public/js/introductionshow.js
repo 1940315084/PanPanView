@@ -12,18 +12,14 @@ function askintroction() {
 					"</p></div></div>"
 			}
 			$("#us").html(data1);
-
-
 		},
 		error: function(error) {
 			console.log("ajax访问出错")
 		}
 	});
-
 }
-
 function askaddress() {
-	console.log("aaaaaaaaa")
+	// console.log("aaaaaaaaa")
 	$.ajax({
 		url: "/connectus",
 		type: "get",
@@ -49,4 +45,7 @@ function askaddress() {
 			console.log(error)
 		}
 	});
+}
+function productsreturn() {
+	window.location.href = "http://localhost:9999";
 }

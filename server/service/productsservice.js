@@ -8,7 +8,6 @@ function select(cb){
 }
 function addproduct(name,message,variety,image_url,cb){
 	dba.addproduct(name,message,variety,image_url,function(result){
-		
 		cb(result)
 	})
 }

@@ -45,3 +45,9 @@
 	-webkit-border-radius: 5px;
 	margin: 0 55px;
 }
+#loginout {
+	display: inline-block;
+}
+.dropdown {
+	font-size: 12px;
+}

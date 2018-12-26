@@ -99,7 +99,7 @@ regem.register = function() {
 						setTimeout(function() {
 							$(".showmsg").hide();		
 						},2000);
-					} else {
+					} else if(result == "注册失败") {
 						$(".showmsg").show();
 						$(".showmsg")[0].value = "注册失败,请重新注册";
 					}
