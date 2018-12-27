@@ -16,17 +16,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			}
 		</script>
 		<!-- Bootstrap Core CSS -->
-		<link href="../public/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+		<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css'/>
 		<!-- Custom CSS -->
-		<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
-		<link rel="stylesheet" type="text/css" href="../public/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
 		<!-- jQuery -->
-		<script src="../public/js/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
 		<!----webfonts--->
 		<link href='http://fonts.useso.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 		<!---//webfonts--->
 		<!-- Bootstrap Core JavaScript -->
-		<script src="../public/js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/news.js"></script>
+
 	</head>
 	<body>
 		<div id="wrapper">
@@ -36,7 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 				<div class="navbar-header">
-					
+
 					<!-- sr-only -->
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="sr-only">Toggle navigation</span>
@@ -44,7 +46,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					
+
 					<a class="navbar-brand" href="index.html">Modern</a>
 				</div>
 				<!-- /.navbar-header -->
@@ -64,7 +66,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</li>
 							<li class="avatar">
 								<a href="#">
-									<img src="../public/images/1.png" alt="" />
+									<img src="images/1.png" alt=""/>
 									<div>New message</div>
 									<small>1 minute ago</small>
 									<span class="label label-info">NEW</span>
@@ -72,7 +74,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</li>
 							<li class="avatar">
 								<a href="#">
-									<img src="../public/images/2.png" alt="" />
+									<img src="images/2.png" alt=""/>
 									<div>New message</div>
 									<small>1 minute ago</small>
 									<span class="label label-info">NEW</span>
@@ -80,28 +82,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</li>
 							<li class="avatar">
 								<a href="#">
-									<img src="../public/images/3.png" alt="" />
+									<img src="images/3.png" alt=""/>
 									<div>New message</div>
 									<small>1 minute ago</small>
 								</a>
 							</li>
 							<li class="avatar">
 								<a href="#">
-									<img src="../public/images/4.png" alt="" />
+									<img src="images/4.png" alt=""/>
 									<div>New message</div>
 									<small>1 minute ago</small>
 								</a>
 							</li>
 							<li class="avatar">
 								<a href="#">
-									<img src="../public/images/5.png" alt="" />
+									<img src="images/5.png" alt=""/>
 									<div>New message</div>
 									<small>1 minute ago</small>
 								</a>
 							</li>
 							<li class="avatar">
 								<a href="#">
-									<img src="../public/images/pic1.png" alt="" />
+									<img src="images/pic1.png" alt=""/>
 									<div>New message</div>
 									<small>1 minute ago</small>
 								</a>
@@ -112,8 +114,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</ul>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"><img src="../public/images/1.png" alt="" /><span
-							 class="badge">9</span></a>
+						<a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"><img src="mages/1.png"
+																							   alt=""/><span
+								class="badge">9</span></a>
 						<ul class="dropdown-menu">
 							<li class="dropdown-menu-header text-center">
 								<strong>Account</strong>
@@ -141,135 +144,76 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</nav>
 
 
-
+			<div id="inf" style="background-color: #00AAF1;"></div>
 			<div id="page-wrapper">
 				<div class="graphs">
 					<div class="widget_head">动态新闻</div>
-				
-				<!-- 行业新闻 -->
+					<button class="btn btn-outline-primary btn-lg add1" style="margin: 5px 20px;"
+							onclick="news.showAddView()">添加新闻
+					</button>
+					<!-- 行业新闻 -->
 					<div class="bs-example5" data-example-id="default-media">
 						<h2 style="margin-bottom: 40px;">行业新闻</h2>
-						<div class="media">
-							<div class="media-left">
-								<a href="#">
-									<img src="../public/images/pic3.jpg" style="width: 140px; height: 105px;">
-								</a>
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading">Media heading1</h4>
-								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus
-								odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
-								Donec lacinia congue felis in faucibus.</p>
-							</div>
-							<div style="text-align: center;">
-								<button class="btn btn-outline-primary btn-lg" style="margin: 5px 20px;">修改图片</button>
-								<button class="btn btn-outline-primary btn-lg" style="margin: 5px 20px;">修改内容</button>
-							</div>
-							<div class="clearfix"> </div>
+						<div id="newstable"></div>
+						<!-- 上一页 下一页 -->
+						<div id="pagelist">
+							<button type="button" class="btn btn-info btn-lg prepage" onclick="news.changePage('pre')">
+								上一页
+							</button>
+
+							<span id="nowpagespan" style="font-size: 20px;"></span>
+							<span style="font-size: 20px;">/</span>
+							<span id="totalpagespan" style="font-size: 20px;"></span>
+
+							<button type="button" class="btn btn-info btn-lg nextpage"
+									onclick="news.changePage('next')">下一页
+							</button>
 						</div>
-						
-						<div class="media">
-							<div class="media-left">
-								<a href="#">
-									<img src="../public/images/pic3.jpg" style="width: 140px; height: 105px;">
-								</a>
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading">Media heading1</h4>
-								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus
-								odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
-								Donec lacinia congue felis in faucibus.</p>
-							</div>
-							<div style="text-align: center;">
-								<button class="btn btn-outline-primary btn-lg" style="margin: 5px 20px;">修改图片</button>
-								<button class="btn btn-outline-primary btn-lg" style="margin: 5px 20px;">修改内容</button>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						
-						<div class="media">
-							<div class="media-left">
-								<a href="#">
-									<img src="../public/images/pic3.jpg" style="width: 140px; height: 105px;">
-								</a>
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading">Media heading1</h4>
-								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus
-								odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
-								Donec lacinia congue felis in faucibus.</p>
-							</div>
-							<div style="text-align: center;">
-								<button class="btn btn-outline-primary btn-lg" style="margin: 5px 20px;">修改图片</button>
-								<button class="btn btn-outline-primary btn-lg" style="margin: 5px 20px;">修改内容</button>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
+
 					</div>
-					
-					
+
+
 					<!-- 公司新闻 -->
 					<div class="bs-example5 example_6" data-example-id="media-list">
 						<h2 style="margin-bottom: 40px;">公司新闻</h2>
-						<ul class="media-list">
-							<li class="media">
-								<div class="media-left">
-									<a href="#">
-										<img src="../public/images/pic3.jpg" style="width: 140px; height: 105px;">
-									</a>
-								</div>
-								<div class="media-body">
-									<h4 class="media-heading">Media heading1</h4>
-									<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
-										purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-								</div>
-								<div style="text-align: center;">
-									<button class="btn btn-outline-primary btn-lg" style="margin: 5px 20px;">修改图片</button>
-									<button class="btn btn-outline-primary btn-lg" style="margin: 5px 20px;">修改内容</button>
-								</div>
-							</li>
-							<li class="media">
-								<div class="media-left">
-									<a href="#">
-									<img src="../public/images/pic3.jpg" style="width: 140px; height: 105px;">
-									</a>
-								</div>
-								<div class="media-body">
-									<h4 class="media-heading">Media heading1</h4>
-									<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
-										purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-								</div>
-								<div style="text-align: center;">
-									<button class="btn btn-outline-primary btn-lg" style="margin: 5px 20px;">修改图片</button>
-									<button class="btn btn-outline-primary btn-lg" style="margin: 5px 20px;">修改内容</button>
-								</div>
-							</li>
-							<li class="media">
-								<div class="media-left">
-									<a href="#">
-										<img src="../public/images/pic3.jpg" style="width: 140px; height: 105px;">
+						<div id="newstable2"></div>
+						<!-- 上一页 下一页 -->
+						<div id="pagelist2">
+							<button type="button" class="btn btn-info btn-lg prepage2"
+									onclick="news.changePage2('pre2')">上一页
+							</button>
 
-									</a>
-								</div>
-								<div class="media-body">
-									<h4 class="media-heading">Media heading1</h4>
-									<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
-										purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-								</div>
-								<div style="text-align: center;">
-									<button class="btn btn-outline-primary btn-lg" style="margin: 5px 20px;">修改图片</button>
-									<button class="btn btn-outline-primary btn-lg" style="margin: 5px 20px;">修改内容</button>
-								</div>
-							</li>
-						</ul>
+							<span id="nowpagespan2" style="font-size: 20px;"></span>
+							<span style="font-size: 20px;">/</span>
+							<span id="totalpagespan2" style="font-size: 20px;"></span>
+
+							<button type="button" class="btn btn-info btn-lg nextpage2"
+									onclick="news.changePage2('next2')">下一页
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+
+		<!-- //增加新闻部分 -->
+		<div id="news_add">
+			<form action="#" method="get">
+				<input type="hidden" id="addid">
+				标题：<input type="text" id="addtitle" placeholder="请输入要增加的标题"> <br>
+				内容：<input type="text" id="addcontent" placeholder="请输入要增加的内容"> <br>
+				类别：<input type="text" id="addvariety" placeholder="输入1为行业新闻,2为公司新闻"> <br>
+				图片地址：<input type="text" id="addimg" placeholder="请输入要增加的图片地址"> <br>
+			</form>
+			<input type="button" onclick="news.addNews()" value="确认增加"> <br>
+			<button onclick="news.cancleAddView()">返回</button>
+		</div>
+
+
 		<!-- Nav CSS -->
-		<link href="../public/css/custom.css" rel="stylesheet">
-		<!-- Metis Menu Plugin JavaScript -->
-		<script src="../public/js/metisMenu.min.js"></script>
-		<script src="../public/js/custom.js"></script>
+		<link href="css/custom.css" rel="stylesheet">
+		<script src="js/metisMenu.min.js"></script>
+		<script src="js/custom.js"></script>
 	</body>
 </html>
